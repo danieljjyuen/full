@@ -59,35 +59,24 @@
 
     const RepositoryItem = ({item}) => {
         return(
-        <View style={style.containerColumn}>
-            <View style={style.containerRow}> 
-                <Image style={style.avatar} source={{uri:item.ownerAvatarUrl}}/>
-                
+            <View style={style.containerColumn}>
+                <View style={style.containerRow}> 
+                    <Image style={style.avatar} source={{uri:item.ownerAvatarUrl}}/>
                 <View style={style.column}>
-                <Text style={style.fullName}>{item.fullName}</Text>
-                <Text>{item.description}</Text>
-    
+                    <Text style={style.fullName}>{item.fullName}</Text>
+                    <Text>{item.description}</Text>
                 <View style={style.flexContainer}>
                 <View style={style.textBackground}>
-                <Text>{item.language}</Text>
+                    <Text>{item.language}</Text>
                 </View>
-            </View>
-                
                 </View>
-
-
-
-
-                
                 </View>
-
-
+                </View>
                 <View style={style.containerCenterRow}>
                     <View style={style.containerColumnStat}>
                     <Text style={style.statBold}>{formatNumber(item.stargazersCount)}</Text>
                     <Text>Stars</Text>
                     </View>
-
                     <View style={style.containerColumnStat}>
                     <Text style={style.statBold}>{formatNumber(item.forksCount)}</Text>
                     <Text>Forks</Text>
@@ -96,29 +85,12 @@
                     <Text style={style.statBold}>{formatNumber(item.reviewCount)}</Text>
                     <Text>Reviews</Text>
                     </View>
-                
                     <View style={style.containerColumnStat}>
                     <Text style={style.statBold}>{formatNumber(item.ratingAverage)}</Text>
                     <Text>Rating</Text>
                     </View>
-                
-                
                 </View>
-
-
             </View>
         )
     }
     export default RepositoryItem
-
-    // {
-    //     id: 'jaredpalmer.formik',
-    //     fullName: 'jaredpalmer/formik',
-    //     description: 'Build forms in React, without the tears',
-    //     language: 'TypeScript',
-    //     forksCount: 1589,
-    //     stargazersCount: 21553,
-    //     ratingAverage: 88,
-    //     reviewCount: 4,
-    //     ownerAvatarUrl: 'https://avatars2.githubusercontent.com/u/4060187?v=4',
-    //   },
