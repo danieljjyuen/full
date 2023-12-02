@@ -29,10 +29,15 @@
         },
         fullName:{
             fontWeight:'bold',
-            fontSize:18
+            fontSize:18,
+            fontFamily:theme.fonts.main
         },
         statBold:{
             fontWeight:'bold',
+            fontFamily:theme.fonts.main
+        },
+        fontFamily:{
+            fontFamily:theme.fonts.main
         },
         textBackground: {
             backgroundColor: theme.colors.primary,
