@@ -64,34 +64,34 @@
 
     const RepositoryItem = ({item}) => {
         return(
-            <View style={style.containerColumn}>
+            <View testID="repositoryItem" style={style.containerColumn}>
                 <View style={style.containerRow}> 
                     <Image style={style.avatar} source={{uri:item.ownerAvatarUrl}}/>
                 <View style={style.column}>
-                    <Text style={style.fullName}>{item.fullName}</Text>
-                    <Text>{item.description}</Text>
+                    <Text testID="fullName" style={style.fullName}>{item.fullName}</Text>
+                    <Text testID="description">{item.description}</Text>
                 <View style={style.flexContainer}>
                 <View style={style.textBackground}>
-                    <Text>{item.language}</Text>
+                    <Text testID="language">{item.language}</Text>
                 </View>
                 </View>
                 </View>
                 </View>
                 <View style={style.containerCenterRow}>
                     <View style={style.containerColumnStat}>
-                    <Text style={style.statBold}>{formatNumber(item.stargazersCount)}</Text>
+                    <Text testID="stargazersCount" style={style.statBold}>{formatNumber(item.stargazersCount)}</Text>
                     <Text>Stars</Text>
                     </View>
                     <View style={style.containerColumnStat}>
-                    <Text style={style.statBold}>{formatNumber(item.forksCount)}</Text>
+                    <Text testID="forksCount" style={style.statBold}>{formatNumber(item.forksCount)}</Text>
                     <Text>Forks</Text>
                     </View>
                     <View style={style.containerColumnStat}>
-                    <Text style={style.statBold}>{formatNumber(item.reviewCount)}</Text>
+                    <Text testID="reviewCount" style={style.statBold}>{formatNumber(item.reviewCount)}</Text>
                     <Text>Reviews</Text>
                     </View>
                     <View style={style.containerColumnStat}>
-                    <Text style={style.statBold}>{formatNumber(item.ratingAverage)}</Text>
+                    <Text testID="ratingAverage" style={style.statBold}>{formatNumber(item.ratingAverage)}</Text>
                     <Text>Rating</Text>
                     </View>
                 </View>
